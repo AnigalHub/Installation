@@ -3,8 +3,8 @@
         <b-container>
             <b-row>
                 <b-col cols="5">
-                    <img src="./../../public/services1.jpg" alt="about1">
-                    <img src="./../../public/services2.jpg" alt="about2">
+                    <img src="./../../public/services1.jpg" alt="строительно-монтажные_работы">
+                    <img src="./../../public/services2.jpg" alt="провода_с_электричеством">
                 </b-col>
                 <b-col>
                     <h2>Мы предоставляем услуги</h2>
@@ -12,7 +12,6 @@
                         <li v-for="(service, index) in Services" :key="index" class="text">{{service.text}}</li>
                     </ul>
                     <b-button>
-                        <!--<a href="./documents/Цены на виды работ.xlsx" download>-->
                         <a>Узнать цены на виды работ</a><div class="shadow"></div></b-button>
                 </b-col>
             </b-row>
