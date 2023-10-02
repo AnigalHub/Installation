@@ -25,8 +25,6 @@
 </template>
 
 <script>
-
-
     import Favicon from "./svg/favicon";
     import information from "../../public/documents/information.json";
 
@@ -77,7 +75,6 @@
         background: #040B11 !important;
         background-size:cover;
         border-bottom: 5px #8792a5 !important;
-        //box-shadow: 7px 7px 7px -7px rgb(34 60 80 / 90%);
         padding: 5px 10%;
         li {margin-bottom: 0 !important;}
         svg{
@@ -97,12 +94,9 @@
     }
     /*надпись "производственная компания" в логотипе*/
     .description_name{
-        //color: white !important;
         font-family: 'Tenor Sans', sans-serif;
         color: #8792a5;
-        //padding-top: 30px;
-        //font-weight: 600;
-        //text-shadow: 0.025rem 0.025rem 0.025rem #8792a5;
+        padding-top: 30px;
     }
     /*АДАПТИВНОСТЬ*/
     @media screen and (max-width: 768px) {
