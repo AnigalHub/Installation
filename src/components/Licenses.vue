@@ -6,17 +6,13 @@
                 <tbody>
                 <tr v-for="(license, index) in Licenses" :key="index" class="text">
                     <td> {{license.text}}</td>
-                    <td>
-                        <a @click="showModal(license)"><span> Просмотр</span><component :is="viewSvg"/></a>
-                    </td>
-                    <td>
-                        <a :href="license.href" download><span>Скачать</span><component :is="downloadSvg"/></a>
-                    </td>
+                    <td><a @click="showModal(license)"><span> Просмотр</span><component :is="viewSvg"/></a></td>
+                    <td><a :href="license.href" download><span>Скачать</span><component :is="downloadSvg"/></a></td>
                 </tr>
                 </tbody>
             </table>
             <b-modal ref="my-modal" id="img" size="lg" centered>
-                <iframe :src="selectedLicense.href" width="100%" height="100%"/>
+                <iframe :src="selectedLicense.href" width="100%" height="580rem"/>
             </b-modal>
         </b-container>
     </div>
