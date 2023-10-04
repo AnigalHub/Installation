@@ -4,8 +4,7 @@
             <b-container>
                 <h1>«{{short_name_company}}»</h1>
                 <p>Комплексные услуги по проектированию и строительству многоквартирных домов и иных объектов недвижимости на территории РФ.</p>
-                <button>Каталог услуг<div class="shadow"></div></button>
-<!--                <div class="shadow"></div>-->
+                <button><a href="#Services">Каталог услуг<div class="shadow"></div></a></button>
             </b-container>
         </div>
     </div>
