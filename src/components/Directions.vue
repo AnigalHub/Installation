@@ -4,16 +4,10 @@
             <h2>Основные направления работы компании</h2>
             <b-row>
                 <b-col v-for="(directions, index) in Directions" :key="index">
-                    <div>
-                        <img :src="directions.svg" alt="about1">
-                        <div class="wrapper">
-                            <div>
-                                <ul>
-                                    <li v-for="item in directions.values" :key="directions.index">{{item.text}}</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <img :src="directions.src" :alt="directions.alt">
+                    <ul>
+                        <li v-for="item in directions.values" :key="directions.index">{{item.text}}</li>
+                    </ul>
                 </b-col>
             </b-row>
         </b-container>
@@ -27,7 +21,8 @@
             return{
                 Directions:[
                     {
-                        svg:'./directions1.jpg',
+                        src:'./directions1.jpg',
+                        alt:'ГОиЧС',
                         values:[
                             {text:"Оповещения населения (ГОиЧС)",},
                             {text:"Оповещения и управления эвакуацией (СОУЭ)",},
@@ -36,7 +31,8 @@
                         ]
                     },
                     {
-                        svg:'./directions2.jpg',
+                        src:'./directions2.jpg',
+                        alt:'охранные_комплексы',
                         values:[
                             {text:"Каналы связи (оптические, электрические, беспроводные)",},
                             {text:"Видеонаблюдения (СОТ, Безопасный регион, Безопасный город)",},
@@ -45,7 +41,8 @@
                         ]
                     },
                     {
-                        svg:'./directions3.jpg',
+                        src:'./directions3.jpg',
+                        alt:'контроль_учета',
                         values: [
                             {text:"Контроль учета электроэнергии (АСКУЭ)",},
                             {text:"Контроль и управления доступом (СКУД)",},
