@@ -2,15 +2,12 @@
     <div id="Contacts">
         <b-container>
             <h2>Свяжитесь с нами!</h2>
-            <p>Мы проконсультируем вас по нашим услугам, подберем мастеров, согласуем удобное для вас
-                время для проведения работ, и ответим на любой ваш вопрос.
-            </p>
+            <p>Мы проконсультируем вас по нашим услугам, подберем мастеров, согласуем удобное для вас время для проведения работ, и ответим на любой ваш вопрос.</p>
             <div class="flex-container">
                 <div v-for="(contact, index) in Contacts" class="contacts" :key="index">
                     <a :href="contact.href" :target="contact.target">
                         <component :is="contact.svg"/>
-                        <p><b>{{contact.name}}</b><br/>
-                            {{contact.description}}</p>
+                        <p><b>{{contact.name}}</b><br/>{{contact.description}}</p>
                     </a>
                 </div>
             </div>
