@@ -87,8 +87,8 @@ export default {
     width: 100%;
     height: auto;
   }
-  p, li{
-    color: rgba(255, 255, 255, 0.65);
+  p, li, a{
+    color: rgba(255, 255, 255, 0.65) !important;
   }
   h1{
     padding: 12% 0 1.5%;
@@ -120,8 +120,15 @@ export default {
     background: rgba(8, 142, 175, 0.7);
     color: rgba(255, 255, 255, 0.75);
     border: none;
+    height: 55px;
     font-family: 'Montserrat', sans-serif;
     position: relative;
+    &:hover{
+      border: 1px solid rgba(255, 255, 255, 0.75);
+      .shadow{
+        display: none;
+      }
+    }
   }
   .shadow{
     position: absolute;
@@ -312,7 +319,7 @@ export default {
     background: rgba(7, 139, 172, 0.04);
     padding: 2% 0;
     .contacts {
-      width: 45%;
+      width: 48%;
       margin: 5px;
     }
     b {
@@ -323,6 +330,138 @@ export default {
       padding: 10px;
       width: 60px;
       float: left !important;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px){
+    h1{
+      padding: 10% 0 1.5%;
+      font-size: 2.8rem !important;
+      line-height: 3rem;
+    }
+    h2{
+      font-size: 1.5rem !important;
+    }
+    p, li, table {
+      font-size: 1rem !important;
+      line-height: 1.4rem;
+    }
+    p {
+      margin-bottom: .5rem !important;
+    }
+    #Home button, #Services button{
+      font-size: 1.1rem !important;
+    }
+    .navbar{
+      padding: 5px 5%;
+    }
+    #Home{
+      p{
+        width: 60%;
+      }
+      button {
+        margin: 4% 20% 3% 30%;
+      }
+    }
+    #About{
+      .row{
+        flex-direction: column-reverse;
+      }
+      .col-6{
+        width: 100%;
+      }
+      img{
+        width: 260px;
+        padding: 4% 4.5%;
+      }
+    }
+    #Directions{
+      .row{
+        flex-direction: column;
+      }
+      img {
+        float: left;
+        width: 200px;
+      }
+      ul{
+        margin-left: 30%;
+      }
+    }
+    #Employees{
+      .employee svg {
+        margin: 2%;
+      }
+    }
+    #Advantages, #Services{
+      li {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+      }
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px){
+    h1{
+      padding: 10% 0 1.5%;
+      font-size: 2.8rem !important;
+      line-height: 3rem;
+    }
+    h2{
+      font-size: 1.5rem !important;
+    }
+    p, li, table {
+      font-size: 1rem !important;
+      line-height: 1.4rem;
+    }
+    p {
+      margin-bottom: .5rem !important;
+    }
+    #Home button, #Services button{
+      font-size: 1.1rem !important;
+    }
+    .navbar{
+      padding: 5px 5%;
+    }
+    #About{
+      img{
+        width: 226px;
+      }
+    }
+    #Employees{
+      .employee svg {
+        margin: 5%;
+      }
+    }
+    #Advantages, #Services{
+      li {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1400px){
+    h1{
+      font-size: 3rem !important;
+      line-height: 3.5rem;
+    }
+    h2{
+      font-size: 1.7rem !important;
+    }
+    p, li, table {
+      font-size: 1.15rem !important;
+      line-height: 1.7rem;
+    }
+    .navbar{
+      padding: 5px 5%;
+    }
+    #About{
+      img{
+        width: 270px;
+      }
+    }
+    #Advantages, #Services{
+      li {
+        font-size: 1.15rem;
+        line-height: 2.2rem;
+      }
     }
   }
 </style>
