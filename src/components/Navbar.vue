@@ -98,8 +98,21 @@
         color: #8792a5;
         padding-top: 30px;
     }
+    @media screen and (min-width: 992px) and (max-width: 1200px){
+        .navbar{
+            padding: 5px 5%;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px){
+        .navbar{
+            padding: 5px 2%;
+        }
+    }
     /*АДАПТИВНОСТЬ*/
     @media screen and (max-width: 768px) {
+        .navbar{
+            padding: 5px 0;
+        }
         /*все кнопки в меню*/
         .nav-link {
             font-size: 1.15rem;
