@@ -176,10 +176,12 @@ export default {
     }
    .adv{
      text-align: center;
-
    }
   }
   #Employees{
+    .container{
+      padding: 0 !important;
+    }
     h2{
       text-align: center;
     }
@@ -198,8 +200,8 @@ export default {
       }
       svg{
         float: left;
-        width: 48px;
-        margin: 3.5%;
+        width: 45px;
+        margin: 1.8%;
       }
     }
   }
@@ -223,6 +225,9 @@ export default {
   }
   #Advantages{
     padding: 2.5% 0 4%;
+    h2{
+      margin-top: 8%;
+    }
     img{
       width: 51.5%;
       float: left;
@@ -253,17 +258,16 @@ export default {
     background: rgba(7, 139, 172, 0.04);
     h2{
       text-align: center;
-      padding-bottom: 2%;
     }
-    a:hover{
+    td span:hover{
       color: #088eaf !important;
+      cursor: pointer !important;
     }
     .table > :not(caption) > * > *, span{
       background: transparent !important;
       color: rgba(255, 255, 255, 0.68) !important;
     }
     table{
-
       tr{
         border-bottom: .26px solid rgba(8, 142, 175, 0.66) !important;
       }
@@ -304,8 +308,8 @@ export default {
       padding-bottom: 2.5%;
       padding-top: 1%;
     }
-    .shadow{
-      width: 290px;
+    .shadow,button{
+      width: 270px;
     }
     li{
       font-size: 1.25rem;
@@ -332,34 +336,43 @@ export default {
       float: left !important;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 992px){
+  @media screen and (min-width: 500px) and (max-width: 768px){
     h1{
       padding: 10% 0 1.5%;
-      font-size: 2.8rem !important;
+      font-size: 2.4rem !important;
       line-height: 3rem;
     }
     h2{
-      font-size: 1.5rem !important;
+      font-size: 1.3rem !important;
+      padding-bottom: 10px;
     }
     p, li, table {
       font-size: 1rem !important;
-      line-height: 1.4rem;
+      line-height: 1.2rem;
+    }
+    ul{
+      margin-bottom: 0 !important;
     }
     p {
       margin-bottom: .5rem !important;
     }
     #Home button, #Services button{
-      font-size: 1.1rem !important;
+      font-size: 1rem !important;
     }
-    .navbar{
-      padding: 5px 5%;
+    #Home .shadow, #Home button, #Services .shadow, #Services button{
+      height: 45px;
     }
     #Home{
+      padding-top: 5%;
+      padding-bottom: 10%;
       p{
-        width: 60%;
+        width: 75%;
       }
       button {
-        margin: 4% 20% 3% 30%;
+        margin: 4% 20% 3% 25%;
+      }
+      .shadow, button{
+        width: 200px;
       }
     }
     #About{
@@ -368,9 +381,175 @@ export default {
       }
       .col-6{
         width: 100%;
+        div{
+          padding-top: 7%;
+          padding-left: 16%;
+        }
       }
       img{
-        width: 260px;
+        width: 160px;
+        padding: 4% 4.5% 2%;
+        &:last-child{
+          padding-top: 4%;
+        }
+      }
+    }
+    #Directions{
+      .row{
+        flex-direction: column;
+        margin: 0 1%;
+      }
+      .col{
+        padding: 10px;
+      }
+      img {
+        float: left;
+        width: 200px;
+        margin-top: 2%;
+        margin-bottom: 1%;
+      }
+      ul{
+        margin-left: 45%;
+      }
+    }
+    #Employees{
+      .employee{
+        height: 65px;
+        svg {
+          margin: 1.5%;
+          width: 40px;
+        }
+        span{
+          font-size: 1.15rem;
+          letter-spacing: -.2px;
+        }
+      }
+    }
+    #Advantages{
+      .row{
+        flex-direction: column;
+      }
+      h2{
+        margin-top: 0;
+      }
+      .col-6{
+        width: 100%;
+      }
+      img{
+        width: 38%;
+        padding-bottom: 0;
+        &:first-child {
+          margin-top: 2%;
+          margin-left: 12%;
+        }
+      }
+    }
+    #Licenses{
+      .table > :not(caption) > * > *{
+        padding: 0.35rem 0.35rem !important;
+      }
+      table  tr td:first-child{
+        width: 78%;
+      }
+      table svg{
+        margin-left: 0;
+      }
+      table span{
+        display: none;
+      }
+      .row{
+        flex-direction: column-reverse;
+      }
+      .col-5 {
+        width: 100%;
+      }
+      svg {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 0;
+      }
+    }
+    #Services{
+      padding: 2% 0 2%;
+      .row{
+        flex-direction: column-reverse;
+      }
+      img{
+        width: 42%;
+        &:last-child {
+          margin-left: 5%;
+        }
+      }
+      .col-5{
+        width: 100%;
+        margin-left: 6%;
+        margin-top: 4%;
+      }
+      .btn{
+        margin-left: 3%;
+      }
+    }
+    #Advantages, #Services{
+      li {
+        font-size: 1rem;
+        line-height: 1.2rem;
+      }
+    }
+    #Contacts{
+      .contacts{
+        width: 100%;
+      }
+      svg{
+        width: 50px;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px){
+    h1{
+      padding: 10% 0 1.5%;
+      font-size: 2.8rem !important;
+      line-height: 3rem;
+    }
+    h2{
+      font-size: 1.5rem !important;
+      padding-bottom: 10px;
+    }
+    p, li, table {
+      font-size: 1rem !important;
+      line-height: 1.35rem;
+    }
+    p {
+      margin-bottom: .5rem !important;
+    }
+    #Home button, #Services button{
+      font-size: 1.1rem !important;
+    }
+    #Home .shadow, #Home button, #Services .shadow, #Services button{
+      height: 45px;
+    }
+    #Home{
+      p{
+        width: 60%;
+      }
+      button {
+        margin: 4% 20% 3% 35%;
+      }
+      .shadow, button{
+        width: 200px;
+      }
+    }
+    #About{
+      .row{
+        flex-direction: column-reverse;
+      }
+      .col-6{
+        width: 100%;
+        div{
+          padding-left: 16%;
+        }
+      }
+      img{
+        width: 220px;
         padding: 4% 4.5%;
       }
     }
@@ -381,20 +560,44 @@ export default {
       img {
         float: left;
         width: 200px;
+        margin-bottom: 1%;
       }
       ul{
         margin-left: 30%;
       }
     }
     #Employees{
-      .employee svg {
-        margin: 2%;
+      .employee{
+        height: 65px;
+        svg {
+          margin: 1.5%;
+          width: 40px;
+        }
+        span{
+          font-size: 1.15rem;
+          letter-spacing: -.2px;
+        }
+      }
+    }
+    #Advantages{
+      .col-6{
+        width: 55%;
+      }
+      img{
+        &:first-child {
+          margin-top: 9%;
+        }
       }
     }
     #Advantages, #Services{
       li {
         font-size: 1.1rem;
-        line-height: 1.8rem;
+        line-height: 1.5rem;
+      }
+    }
+    #Contacts{
+      svg{
+        width: 50px;
       }
     }
   }
@@ -406,6 +609,7 @@ export default {
     }
     h2{
       font-size: 1.5rem !important;
+      padding-bottom: 10px;
     }
     p, li, table {
       font-size: 1rem !important;
@@ -415,7 +619,15 @@ export default {
       margin-bottom: .5rem !important;
     }
     #Home button, #Services button{
-      font-size: 1.1rem !important;
+      font-size: 1.05rem !important;
+    }
+    #Home .shadow, #Home button, #Services .shadow, #Services button{
+      height: 48px;
+    }
+    #Home{
+      p{
+        width: 60%;
+      }
     }
     .navbar{
       padding: 5px 5%;
@@ -423,11 +635,6 @@ export default {
     #About{
       img{
         width: 226px;
-      }
-    }
-    #Employees{
-      .employee svg {
-        margin: 5%;
       }
     }
     #Advantages, #Services{

@@ -98,7 +98,7 @@
         color: #8792a5;
         padding-top: 30px;
     }
-    @media screen and (min-width: 992px) and (max-width: 1200px){
+    @media screen and (min-width: 992px) and (max-width: 1400px){
         .navbar{
             padding: 5px 5%;
         }
