@@ -6,7 +6,7 @@
                 <tbody>
                 <tr v-for="(license, index) in Licenses" :key="index" class="text">
                     <td> {{license.text}}</td>
-                    <td><a @click="showModal(license)"><span> Просмотр</span><component :is="viewSvg"/></a></td>
+                    <td><a @click="showModal(license)"><span>Просмотр</span><component :is="viewSvg"/></a></td>
                     <td><a :href="license.href" download><span>Скачать</span><component :is="downloadSvg"/></a></td>
                 </tr>
                 </tbody>

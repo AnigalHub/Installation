@@ -3,8 +3,10 @@
         <b-container>
             <b-row>
                 <b-col cols="6">
-                    <img src="./../../public/about1.png" alt="монтажник_стоит_с_проводами">
-                    <img src="./../../public/about2.png" alt="монтажник">
+                    <div>
+                        <img src="./../../public/about1.png" alt="монтажник_стоит_с_проводами">
+                        <img src="./../../public/about2.png" alt="монтажник">
+                    </div>
                 </b-col>
                 <b-col>
                     <p>Компания <span>{{short_name_company}} </span> специализируется на строительно-монтажных и
