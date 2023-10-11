@@ -112,6 +112,9 @@
     @media screen and (max-width: 768px) {
         .navbar{
             padding: 5px 0;
+            svg{
+                width: 30px;
+            }
         }
         /*все кнопки в меню*/
         .nav-link {

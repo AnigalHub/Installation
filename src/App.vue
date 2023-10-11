@@ -336,6 +336,179 @@ export default {
       float: left !important;
     }
   }
+
+  @media screen and (min-width: 300px) and (max-width: 500px){
+    h1{
+      padding: 10% 0 1.5%;
+      font-size: 2rem !important;
+      line-height: 3rem;
+    }
+    h2{
+      font-size: 1.2rem !important;
+      padding-bottom: 10px;
+    }
+    p, li, table {
+      font-size: .9rem !important;
+      line-height: 1.15rem;
+    }
+    ul{
+      margin-bottom: 0 !important;
+    }
+    p {
+      margin-bottom: .5rem !important;
+    }
+    #Home button, #Services button{
+      font-size: .9rem !important;
+    }
+    #Home .shadow, #Home button, #Services .shadow, #Services button{
+      height: 38px;
+    }
+    #Home{
+      padding-top: 5%;
+      padding-bottom: 10%;
+      p{
+        width: 95%;
+      }
+      button {
+        margin: 4% 20% 3% 20%;
+      }
+      .shadow, button{
+        width: 150px;
+      }
+    }
+    #About{
+      .row{
+        flex-direction: column-reverse;
+      }
+      .col-6{
+        width: 100%;
+        div{
+          padding-top: 7%;
+          padding-left: 3%;
+        }
+      }
+      img{
+        width: 130px;
+        padding: 4% 4.5% 2%;
+        &:last-child{
+          padding-top: 4%;
+        }
+      }
+    }
+    #Directions{
+      .row{
+        flex-direction: column;
+        margin: 0 1%;
+      }
+      .col{
+        padding: 10px;
+      }
+      img {
+        float: left;
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
+      ul{
+        margin-left: -5%;
+      }
+    }
+    #Employees{
+      .employee{
+        height: 95px;
+        svg {
+          margin: 1.5% 1.5% 6%;
+          width: 40px;
+        }
+        span{
+          font-size: 1rem;
+          letter-spacing: -.2px;
+        }
+      }
+    }
+    #Advantages{
+      .row{
+        flex-direction: column;
+      }
+      h2{
+        margin-top: 0;
+      }
+      .col-6{
+        width: 100%;
+        padding-top: 3%;
+      }
+      img{
+        width: 45%;
+        padding-bottom: 0;
+        &:first-child {
+          margin-top: 2%;
+          margin-left: 3%;
+        }
+      }
+    }
+    #Licenses{
+      .table > :not(caption) > * > *{
+        padding: 0.35rem 0.35rem !important;
+      }
+      table  tr td:first-child{
+        width: 78%;
+      }
+      table svg{
+        margin-left: 0;
+      }
+      table span{
+        display: none;
+      }
+      .row{
+        flex-direction: column-reverse;
+      }
+      .col-5 {
+        width: 100%;
+      }
+      svg {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 0;
+      }
+    }
+    #Services{
+      padding: 2% 0 2%;
+      .row{
+        flex-direction: column-reverse;
+      }
+      img{
+        width: 45%;
+        &:last-child {
+          margin-left: 3%;
+        }
+      }
+      .col-5{
+        width: 100%;
+        margin-left: 6%;
+        margin-top: 4%;
+      }
+      .btn{
+        margin-left: 3%;
+      }
+      button, .shadow{
+        width: 205px;
+      }
+    }
+    #Advantages, #Services{
+      li {
+        font-size: 1rem;
+        line-height: 1.2rem;
+      }
+    }
+    #Contacts{
+      .contacts{
+        width: 100%;
+      }
+      svg{
+        width: 50px;
+      }
+    }
+  }
   @media screen and (min-width: 500px) and (max-width: 768px){
     h1{
       padding: 10% 0 1.5%;
