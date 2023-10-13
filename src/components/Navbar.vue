@@ -122,4 +122,19 @@
             padding: 0.35rem 1rem !important;
         }
     }
+    @media screen and (max-width: 500px) {
+        /*все кнопки в меню*/
+        .nav-link {
+            font-size: 1rem !important;
+            padding: 0.35rem 1rem !important;
+        }
+    }
+    @media screen and (max-width: 300px) {
+        .navbar svg{
+            width: 20px;
+        }
+        .description_name{
+            font-size: 1rem !important;
+        }
+    }
 </style>
