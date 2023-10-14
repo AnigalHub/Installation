@@ -336,8 +336,7 @@ export default {
       float: left !important;
     }
   }
-
-  @media screen and (min-width: 300px) and (max-width: 500px){
+  @media screen and (max-width: 500px){
     h1{
       padding: 10% 0 1.5%;
       font-size: 2rem !important;
@@ -359,9 +358,10 @@ export default {
     }
     #Home button, #Services button{
       font-size: .9rem !important;
+      padding-top: 0 !important;
     }
     #Home .shadow, #Home button, #Services .shadow, #Services button{
-      height: 38px;
+      height: 35px;
     }
     #Home{
       padding-top: 5%;
@@ -370,7 +370,7 @@ export default {
         width: 95%;
       }
       button {
-        margin: 4% 20% 3% 20%;
+        margin: 4% 20% 3% 24%;
       }
       .shadow, button{
         width: 150px;
@@ -388,8 +388,11 @@ export default {
         }
       }
       img{
-        width: 130px;
+        width: 46%;
         padding: 4% 4.5% 2%;
+        &:first-child{
+          margin-top: 0;
+        }
         &:last-child{
           padding-top: 4%;
         }
@@ -406,6 +409,7 @@ export default {
       img {
         float: left;
         width: 100%;
+        height: 145px !important;
         margin-top: 2%;
         margin-bottom: 2%;
       }
@@ -415,10 +419,10 @@ export default {
     }
     #Employees{
       .employee{
-        height: 95px;
+        height: 80px;
         svg {
           margin: 1.5% 1.5% 6%;
-          width: 40px;
+          width: 35px;
         }
         span{
           font-size: 1rem;
@@ -451,7 +455,7 @@ export default {
         padding: 0.35rem 0.35rem !important;
       }
       table  tr td:first-child{
-        width: 78%;
+        width: 100%;
       }
       table svg{
         margin-left: 0;
@@ -484,14 +488,14 @@ export default {
       }
       .col-5{
         width: 100%;
-        margin-left: 6%;
+        padding-left: 6%;
         margin-top: 4%;
       }
       .btn{
         margin-left: 3%;
       }
       button, .shadow{
-        width: 205px;
+        width: 225px;
       }
     }
     #Advantages, #Services{
@@ -505,7 +509,7 @@ export default {
         width: 100%;
       }
       svg{
-        width: 50px;
+        width: 45px;
       }
     }
   }
