@@ -62,6 +62,7 @@
     .navbar-light .navbar-toggler {
         color: #3798c5;
     }
+    /*меню*/
     .navbar-nav{
         margin-bottom: 0 !important;
     }
@@ -76,7 +77,9 @@
         background-size:cover;
         border-bottom: 5px #8792a5 !important;
         padding: 5px 10%;
+        /*пункты списка*/
         li {margin-bottom: 0 !important;}
+        /*svg*/
         svg{
             width: 40px;
         }
@@ -88,6 +91,7 @@
         padding-left: 1rem !important;
         font-family: 'Tenor Sans', sans-serif;
         font-size: 1.3rem ;
+        /*при наведении*/
         &:hover{
             color: white !important;
         }
@@ -99,19 +103,23 @@
         padding-top: 30px;
     }
     @media screen and (min-width: 992px) and (max-width: 1400px){
+        /*меню на всех экранах (которое будет и складываться на маленьких экранах и раскрываться на больших)*/
         .navbar{
             padding: 5px 5%;
         }
     }
     @media screen and (min-width: 768px) and (max-width: 992px){
+        /*меню на всех экранах (которое будет и складываться на маленьких экранах и раскрываться на больших)*/
         .navbar{
             padding: 5px 2%;
         }
     }
     /*АДАПТИВНОСТЬ*/
     @media screen and (max-width: 768px) {
+        /*меню на всех экранах (которое будет и складываться на маленьких экранах и раскрываться на больших)*/
         .navbar{
             padding: 5px 0;
+            /*svg*/
             svg{
                 width: 30px;
             }
@@ -130,9 +138,11 @@
         }
     }
     @media screen and (max-width: 300px) {
+        /*svg*/
         .navbar svg{
             width: 20px;
         }
+        /*надпись "производственная компания" в логотипе*/
         .description_name{
             font-size: 1rem !important;
         }
