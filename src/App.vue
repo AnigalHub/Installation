@@ -309,7 +309,7 @@ export default {
       padding-top: 1%;
     }
     .shadow,button{
-      width: 270px;
+      width: 300px;
     }
     li{
       font-size: 1.25rem;
@@ -336,6 +336,8 @@ export default {
       float: left !important;
     }
   }
+
+  /*АДАПТИВНОСТЬ*/
   @media screen and (max-width: 500px){
     h1{
       padding: 10% 0 1.5%;
