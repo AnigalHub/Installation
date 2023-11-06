@@ -41,6 +41,7 @@ export default {
   .modal-open {
     overflow: hidden;
   }
+  /*футер модального окна*/
   .modal-footer {display: none !important;}
   /*заголовок модального окна*/
   .modal-header{
@@ -50,6 +51,7 @@ export default {
   .modal-body{
     padding: 0;
   }
+  /*кнопки в модальном окне*/
   .modal button{
     background: transparent !important;
   }
@@ -70,9 +72,11 @@ export default {
     margin: 0 !important;
     padding: 0 !important;
   }
+  /*ссылки*/
   a{
     text-decoration: none !important;
   }
+  /*контейнер, который включает в себя повтор блоков*/
   .flex-container{
     display: flex;
     flex-wrap: wrap;
@@ -87,9 +91,11 @@ export default {
     width: 100%;
     height: auto;
   }
+  /*параграф, пункты списка, ссылки*/
   p, li, a{
     color: rgba(255, 255, 255, 0.65) !important;
   }
+  /*заголовки*/
   h1{
     padding: 12% 0 1.5%;
     font-size: 3.25rem !important;
@@ -105,11 +111,13 @@ export default {
     padding-bottom: 20px;
     color: #088eaf !important;
   }
+  /*параграф, пункты списка, таблицы*/
   p, li, table{
     font-family: 'Source Serif 4', serif;
     font-size: 1.2rem;
     line-height:1.9rem;
   }
+  /*компоненты - Главная, Услуги (кнопки)*/
   #Home button, #Services button{
     font-size: 1.2rem !important;
     line-height: 2.3rem;
@@ -130,6 +138,7 @@ export default {
       }
     }
   }
+  /*обводка кнопок*/
   .shadow{
     position: absolute;
     border: 1px solid rgba(255, 255, 255, 0.75);
@@ -138,10 +147,12 @@ export default {
     transform: skew(-2deg);
     height: 55px;
   }
+  /*компонент - Главная*/
   #Home{
     padding-bottom: 5%;
     background: url("../public/bg.png") no-repeat;
     background-size: 100% 100%;
+    /*параграф*/
     p{
       width: 55%;
       font-size: 1.35rem;
@@ -149,55 +160,67 @@ export default {
       text-align: center;
       color: rgba(255, 255, 255, 0.75) !important;
     }
+    /*кнопоки*/
     button{
       margin: 4% 20% 3% 40%;
       width: 230px;
     }
+    /*обводка кнопок*/
     .shadow{
       width: 230px;
     }
   }
+  /*компонент - О нас*/
   #About{
     padding: 4% 0 3%;
+    /*выделение важного*/
     span{
       color: #088eaf;
       font-size: 1.25rem;
       font-weight: 600;
     }
+    /*картинки*/
     img{
       width: 300px;
       padding: 3% 3.5%;
+      /*первая картинка*/
       &:first-child{
         margin-top: -8%;
       }
+      /*последняя картинка*/
       &:last-child{
         padding-top: 14%;
       }
     }
-   .adv{
-     text-align: center;
-   }
   }
+  /*компонент - Сотрудники*/
   #Employees{
+    /*контейнер*/
     .container{
       padding: 0 !important;
     }
+    /*заголовки*/
     h2{
       text-align: center;
     }
+    /*картинки*/
     img{
       padding-top: 2%;
     }
+    /*контейнер, который включает в себя повтор блоков*/
     .flex-container{
       padding-top: 1.5%;
     }
+    /*блоки под информацию о сотрудниках*/
     .employee{
       width: 100%;
+      /*выделение главного*/
       span{
         color: #088eaf;
         font-size: 1.25rem;
         font-weight: 600;
       }
+      /*svg*/
       svg{
         float: left;
         width: 45px;
@@ -205,131 +228,165 @@ export default {
       }
     }
   }
+  /*компонент - Направления*/
   #Directions{
     padding: 2.5% 0;
     background: rgba(7, 139, 172, 0.04);
+    /*заголовки*/
     h2{
       text-align: center;
     }
+    /*картинки*/
     img{
       border: 3px solid #040B11;
       margin-bottom: 4%;
     }
+    /*бутстрап сетка*/
     .col{
       padding-top: 1%;
       transform: skew(-2.5deg);
       margin: 1.3%;
       border: 1px solid rgba(8, 142, 175, 0.56);
-
     }
   }
+  /*компонент - Преимущества*/
   #Advantages{
     padding: 2.5% 0 4%;
+    /*заголовки*/
     h2{
       margin-top: 8%;
     }
+    /*картинки*/
     img{
       width: 51.5%;
       float: left;
       margin-top: 3%;
       padding: 3% 3%;
+      /*первая картинка*/
       &:first-child{
         margin-top: 7%;
         margin-left: -5%;
       }
+      /*последняя картинка*/
       &:last-child{
         margin-top: -2%;
         margin-left: 2%;
       }
     }
+    /*бутстрап сетка*/
     .col-5{
       padding: 0 !important;
     }
+    /*бутстрап сетка*/
     .col{
       padding-left: 2.5%;
     }
+    /*пункты списка*/
     li{
       font-size: 1.25rem;
       line-height:2.65rem;
     }
   }
+  /*компонент - Лицензии*/
   #Licenses{
     padding: 2% 0 2%;
     background: rgba(7, 139, 172, 0.04);
+    /*заголовки*/
     h2{
       text-align: center;
     }
+    /*выделение главного - при наведении*/
     td span:hover{
       color: #088eaf !important;
       cursor: pointer !important;
     }
+    /*отступы в таблице*/
     .table > :not(caption) > * > *, span{
       background: transparent !important;
       color: rgba(255, 255, 255, 0.68) !important;
     }
+    /*таблица*/
     table{
+      /*строки таблицы*/
       tr{
         border-bottom: .26px solid rgba(8, 142, 175, 0.66) !important;
       }
+      /*столбцы таблицы*/
       td{
         padding: 1% 0;
       }
+      /*первый столбец таблицы*/
       tr td:first-child{
         width: 61%;
       }
+      /*svg*/
       svg{
         width: 23px;
         float: left;
       }
     }
+    /*выделение главного*/
     span{
       float: left;
       padding: 0 10px;
     }
+    /*svg*/
     svg{
       width: 100%;
       padding: 0;
     }
   }
+  /*компонент - Услуги*/
   #Services{
     padding: 5% 0 2.5%;
+    /*картинки*/
     img{
       width: 85%;
       height: 42%;
+      /*первая картинка*/
       &:first-child{
         margin-bottom: 6%;
       }
+      /*последняя картинка*/
       &:last-child{
         margin-left: 15%;
       }
     }
+    /*кнопки*/
     button{
       margin-top: 3.5%;
       padding-bottom: 2.5%;
       padding-top: 1%;
     }
-    .shadow,button{
+    /*обводка кнопок, кнопки*/
+    .shadow, button{
       width: 300px;
     }
+    /*пункты списка*/
     li{
       font-size: 1.25rem;
       line-height:2.7rem;
     }
+    /*бутстрап сетка*/
     .col{
       padding-left: 5%;
     }
   }
-  #Contacts {
+  /*компонент - Контакты*/
+  #Contacts{
     background: rgba(7, 139, 172, 0.04);
     padding: 2% 0;
-    .contacts {
+    /*блоки под информацию о контактах*/
+    .contacts{
       width: 48%;
       margin: 5px;
     }
-    b {
+    /*жирный шрифт*/
+    b{
       color: #088eaf;
     }
-    svg {
+    /*svg*/
+    svg{
       margin-right: 1%;
       padding: 10px;
       width: 60px;
