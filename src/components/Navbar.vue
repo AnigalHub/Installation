@@ -59,7 +59,7 @@
 
 <style scoped lang="scss">
     /*текст при раскрытом меню в мобильном варианте*/
-    .navbar-light .navbar-toggler {
+    .navbar-light .navbar-toggler{
         color: #3798c5;
     }
     /*меню*/
@@ -78,7 +78,7 @@
         border-bottom: 5px #8792a5 !important;
         padding: 5px 10%;
         /*пункты списка*/
-        li {margin-bottom: 0 !important;}
+        li{margin-bottom: 0 !important;}
         /*svg*/
         svg{
             width: 40px;
@@ -115,7 +115,7 @@
         }
     }
     /*АДАПТИВНОСТЬ*/
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px){
         /*меню на всех экранах (которое будет и складываться на маленьких экранах и раскрываться на больших)*/
         .navbar{
             padding: 5px 0;
@@ -125,19 +125,19 @@
             }
         }
         /*все кнопки в меню*/
-        .nav-link {
+        .nav-link{
             font-size: 1.15rem;
             padding: 0.35rem 1rem !important;
         }
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 500px){
         /*все кнопки в меню*/
-        .nav-link {
+        .nav-link{
             font-size: 1rem !important;
             padding: 0.35rem 1rem !important;
         }
     }
-    @media screen and (max-width: 300px) {
+    @media screen and (max-width: 300px){
         /*svg*/
         .navbar svg{
             width: 20px;

@@ -396,6 +396,7 @@ export default {
 
   /*АДАПТИВНОСТЬ*/
   @media screen and (max-width: 500px){
+    /*заголовки*/
     h1{
       padding: 10% 0 1.5%;
       font-size: 2rem !important;
@@ -405,174 +406,226 @@ export default {
       font-size: 1.2rem !important;
       padding-bottom: 10px;
     }
-    p, li, table {
+    /*параграф, пункты списка, таблицы*/
+    p, li, table{
       font-size: .9rem !important;
       line-height: 1.15rem;
     }
+    /*список*/
     ul{
       margin-bottom: 0 !important;
     }
-    p {
+    /*параграф*/
+    p{
       margin-bottom: .5rem !important;
     }
+    /*компоненты - Главная, Услуги (кнопки)*/
     #Home button, #Services button{
       font-size: .9rem !important;
       padding-top: 0 !important;
     }
+    /*компоненты - Главная, Услуги (обводка кнопок, кнопки)*/
     #Home .shadow, #Home button, #Services .shadow, #Services button{
       height: 35px;
     }
+    /*компонент - Главная*/
     #Home{
       padding-top: 5%;
       padding-bottom: 10%;
+      /*параграф*/
       p{
         width: 95%;
       }
-      button {
+      /*кнопки*/
+      button{
         margin: 4% 20% 3% 24%;
       }
+      /*обводка кнопок, кнопки*/
       .shadow, button{
         width: 150px;
       }
     }
+    /*компонент - О нас*/
     #About{
+      /*бутстрап сетка*/
       .row{
         flex-direction: column-reverse;
       }
+      /*бутстрап сетка*/
       .col-6{
         width: 100%;
+        /*блок*/
         div{
           padding-top: 7%;
           padding-left: 3%;
         }
       }
+      /*картинки*/
       img{
         width: 46%;
         padding: 4% 4.5% 2%;
+        /*первая картинка*/
         &:first-child{
           margin-top: 0;
         }
+        /*последняя картинка*/
         &:last-child{
           padding-top: 4%;
         }
       }
     }
+    /*компонент - Направления*/
     #Directions{
+      /*бутстрап сетка*/
       .row{
         flex-direction: column;
         margin: 0 1%;
       }
+      /*бутстрап сетка*/
       .col{
         padding: 10px;
       }
-      img {
+      /*картинки*/
+      img{
         float: left;
         width: 100%;
         height: 145px !important;
         margin-top: 2%;
         margin-bottom: 2%;
       }
+      /*список*/
       ul{
         margin-left: -5%;
       }
     }
+    /*компонент - Сотрудники*/
     #Employees{
+      /*блоки под информацию о сотрудниках*/
       .employee{
         height: 80px;
-        svg {
+        /*svg*/
+        svg{
           margin: 1.5% 1.5% 6%;
           width: 35px;
         }
+        /*выделение главного*/
         span{
           font-size: 1rem;
           letter-spacing: -.2px;
         }
       }
     }
+    /*компоненты - Преимущества*/
     #Advantages{
+      /*бутстрап сетка*/
       .row{
         flex-direction: column;
       }
+      /*заголовки*/
       h2{
         margin-top: 0;
       }
+      /*бутстрап сетка*/
       .col-6{
         width: 100%;
         padding-top: 3%;
       }
+      /*картинки*/
       img{
         width: 45%;
         padding-bottom: 0;
-        &:first-child {
+        /*первая картинка*/
+        &:first-child{
           margin-top: 2%;
           margin-left: 3%;
         }
       }
     }
+    /*компонент - Лицензии*/
     #Licenses{
+      /*отступы в таблице*/
       .table > :not(caption) > * > *{
         padding: 0.35rem 0.35rem !important;
       }
-      table  tr td:first-child{
+      /*первый столбец таблицы*/
+      table tr td:first-child{
         width: 100%;
       }
+      /*svg в таблице*/
       table svg{
         margin-left: 0;
       }
+      /*выделения важного в таблице*/
       table span{
         display: none;
       }
+      /*бутстрап сетка*/
       .row{
         flex-direction: column-reverse;
       }
-      .col-5 {
+      /*бутстрап сетка*/
+      .col-5{
         width: 100%;
       }
-      svg {
+      /*svg*/
+      svg{
         width: 50%;
         margin-left: 25%;
         margin-top: 0;
       }
     }
+    /*компонент - Услуги*/
     #Services{
       padding: 2% 0 2%;
+      /*бутстрап сетка*/
       .row{
         flex-direction: column-reverse;
       }
+      /*картинки*/
       img{
         width: 45%;
-        &:last-child {
+        /*последняя картинка*/
+        &:last-child{
           margin-left: 3%;
         }
       }
+      /*бутстрап сетка*/
       .col-5{
         width: 100%;
         padding-left: 6%;
         margin-top: 4%;
       }
+      /*кнопки*/
       .btn{
         margin-left: 3%;
       }
+      /*обводка кнопок, кнопки*/
       button, .shadow{
         width: 225px;
       }
     }
+    /*компоненты - Преимущества, Услуги*/
     #Advantages, #Services{
-      li {
+      /*пункты списка*/
+      li{
         font-size: 1rem;
         line-height: 1.2rem;
       }
     }
+    /*компоненты - Контакты*/
     #Contacts{
+      /*блоки под информацию о контактах*/
       .contacts{
         width: 100%;
       }
+      /*svg*/
       svg{
         width: 45px;
       }
     }
   }
   @media screen and (min-width: 500px) and (max-width: 768px){
+    /*заголовки*/
     h1{
       padding: 10% 0 1.5%;
       font-size: 2.4rem !important;
@@ -582,165 +635,215 @@ export default {
       font-size: 1.3rem !important;
       padding-bottom: 10px;
     }
+    /*параграф, пункты списка, таблицы*/
     p, li, table {
       font-size: 1rem !important;
       line-height: 1.2rem;
     }
+    /*список*/
     ul{
       margin-bottom: 0 !important;
     }
-    p {
+    /*параграф*/
+    p{
       margin-bottom: .5rem !important;
     }
+    /*компоненты - Главная, Услуги (кнопки)*/
     #Home button, #Services button{
       font-size: 1rem !important;
     }
+    /*компоненты - Главная, Услуги (обводка кнопок, кнопки)*/
     #Home .shadow, #Home button, #Services .shadow, #Services button{
       height: 45px;
     }
+    /*компонент - Главная*/
     #Home{
       padding-top: 5%;
       padding-bottom: 10%;
+      /*параграф*/
       p{
         width: 75%;
       }
+      /*кнопки*/
       button {
         margin: 4% 20% 3% 25%;
       }
+      /*обводка кнопок, кнопки*/
       .shadow, button{
         width: 200px;
       }
     }
+    /*компонент - О нас*/
     #About{
+      /*бутстрап сетка*/
       .row{
         flex-direction: column-reverse;
       }
+      /*бутстрап сетка*/
       .col-6{
         width: 100%;
+        /*блок*/
         div{
           padding-top: 7%;
           padding-left: 16%;
         }
       }
+      /*картинки*/
       img{
         width: 160px;
         padding: 4% 4.5% 2%;
+        /*последняя картинка*/
         &:last-child{
           padding-top: 4%;
         }
       }
     }
+    /*компонент - Направления*/
     #Directions{
+      /*бутстрап сетка*/
       .row{
         flex-direction: column;
         margin: 0 1%;
       }
+      /*бутстрап сетка*/
       .col{
         padding: 10px;
       }
-      img {
+      /*картинки*/
+      img{
         float: left;
         width: 200px;
         margin-top: 2%;
         margin-bottom: 1%;
       }
+      /*список*/
       ul{
         margin-left: 45%;
       }
     }
+    /*компонент - Сотрудники*/
     #Employees{
+      /*блоки под информацию о сотрудниках*/
       .employee{
         height: 65px;
-        svg {
+        /*svg*/
+        svg{
           margin: 1.5%;
           width: 40px;
         }
+        /*выделение главного*/
         span{
           font-size: 1.15rem;
           letter-spacing: -.2px;
         }
       }
     }
+    /*компоненты - Преимущества*/
     #Advantages{
+      /*бутстрап сетка*/
       .row{
         flex-direction: column;
       }
+      /*заголовки*/
       h2{
         margin-top: 0;
       }
+      /*бутстрап сетка*/
       .col-6{
         width: 100%;
       }
+      /*картинки*/
       img{
         width: 38%;
         padding-bottom: 0;
+        /*первая картинка*/
         &:first-child {
           margin-top: 2%;
           margin-left: 12%;
         }
       }
     }
+    /*компонент - Лицензии*/
     #Licenses{
+      /*отступы в таблице*/
       .table > :not(caption) > * > *{
         padding: 0.35rem 0.35rem !important;
       }
-      table  tr td:first-child{
+      /*первый столбец таблицы*/
+      table tr td:first-child{
         width: 78%;
       }
+      /*svg в таблице*/
       table svg{
         margin-left: 0;
       }
+      /*выделения важного в таблице*/
       table span{
         display: none;
       }
+      /*бутстрап сетка*/
       .row{
         flex-direction: column-reverse;
       }
-      .col-5 {
+      /*бутстрап сетка*/
+      .col-5{
         width: 100%;
       }
-      svg {
+      /*svg*/
+      svg{
         width: 50%;
         margin-left: 25%;
         margin-top: 0;
       }
     }
+    /*компонент - Услуги*/
     #Services{
       padding: 2% 0 2%;
+      /*бутстрап сетка*/
       .row{
         flex-direction: column-reverse;
       }
+      /*картинки*/
       img{
         width: 42%;
-        &:last-child {
+        /*последняя картинка*/
+        &:last-child{
           margin-left: 5%;
         }
       }
+      /*бутстрап сетка*/
       .col-5{
         width: 100%;
         margin-left: 6%;
         margin-top: 4%;
       }
+      /*кнопки*/
       .btn{
         margin-left: 3%;
       }
     }
+    /*компоненты - Преимущества, Услуги*/
     #Advantages, #Services{
-      li {
+      /*пункты списка*/
+      li{
         font-size: 1rem;
         line-height: 1.2rem;
       }
     }
+    /*компоненты - Контакты*/
     #Contacts{
+      /*блоки под информацию о контактах*/
       .contacts{
         width: 100%;
       }
+      /*svg*/
       svg{
         width: 50px;
       }
     }
   }
   @media screen and (min-width: 768px) and (max-width: 992px){
+    /*заголовки*/
     h1{
       padding: 10% 0 1.5%;
       font-size: 2.8rem !important;
@@ -750,94 +853,121 @@ export default {
       font-size: 1.5rem !important;
       padding-bottom: 10px;
     }
+    /*параграф, пункты списка, таблицы*/
     p, li, table {
       font-size: 1rem !important;
       line-height: 1.35rem;
     }
-    p {
+    /*параграф*/
+    p{
       margin-bottom: .5rem !important;
     }
+    /*компоненты - Главная, Услуги (кнопки)*/
     #Home button, #Services button{
       font-size: 1.1rem !important;
     }
+    /*компоненты - Главная, Услуги (обводка кнопок, кнопки)*/
     #Home .shadow, #Home button, #Services .shadow, #Services button{
       height: 45px;
     }
+    /*компонент - Главная*/
     #Home{
+      /*параграф*/
       p{
         width: 60%;
       }
+      /*кнопки*/
       button {
         margin: 4% 20% 3% 35%;
       }
+      /*обводка кнопок, кнопки*/
       .shadow, button{
         width: 200px;
       }
     }
+    /*компонент - О нас*/
     #About{
+      /*бутстрап сетка*/
       .row{
         flex-direction: column-reverse;
       }
+      /*бутстрап сетка*/
       .col-6{
         width: 100%;
+        /*блок*/
         div{
           padding-left: 16%;
         }
       }
+      /*картинки*/
       img{
         width: 220px;
         padding: 4% 4.5%;
       }
     }
+    /*компонент - Направления*/
     #Directions{
+      /*бутстрап сетка*/
       .row{
         flex-direction: column;
       }
-      img {
+      /*картинки*/
+      img{
         float: left;
         width: 200px;
         margin-bottom: 1%;
       }
+      /*список*/
       ul{
         margin-left: 30%;
       }
     }
+    /*компонент - Сотрудники*/
     #Employees{
+      /*блоки под информацию о сотрудниках*/
       .employee{
         height: 65px;
-        svg {
+        /*svg*/
+        svg{
           margin: 1.5%;
           width: 40px;
         }
+        /*выделение главного*/
         span{
           font-size: 1.15rem;
           letter-spacing: -.2px;
         }
       }
     }
+    /*компоненты - Преимущества*/
     #Advantages{
+      /*бутстрап сетка*/
       .col-6{
         width: 55%;
       }
+      /*картинки*/
       img{
-        &:first-child {
+        /*первая картинка*/
+        &:first-child{
           margin-top: 9%;
         }
       }
     }
+    /*компоненты - Преимущества, Услуги*/
     #Advantages, #Services{
-      li {
+      /*пункты списка*/
+      li{
         font-size: 1.1rem;
         line-height: 1.5rem;
       }
     }
-    #Contacts{
-      svg{
+    /*компоненты - Контакты(svg)*/
+    #Contacts svg{
         width: 50px;
-      }
     }
   }
   @media screen and (min-width: 992px) and (max-width: 1200px){
+    /*заголовки*/
     h1{
       padding: 10% 0 1.5%;
       font-size: 2.8rem !important;
@@ -847,40 +977,46 @@ export default {
       font-size: 1.5rem !important;
       padding-bottom: 10px;
     }
+    /*параграф, пункты списка, таблицы*/
     p, li, table {
       font-size: 1rem !important;
       line-height: 1.4rem;
     }
-    p {
+    /*параграф*/
+    p{
       margin-bottom: .5rem !important;
     }
+    /*компоненты - Главная, Услуги (кнопки)*/
     #Home button, #Services button{
       font-size: 1.05rem !important;
     }
+    /*компоненты - Главная, Услуги (обводка кнопок, кнопки)*/
     #Home .shadow, #Home button, #Services .shadow, #Services button{
       height: 48px;
     }
-    #Home{
-      p{
+    /*компонент - Главная (параграф)*/
+    #Home p{
         width: 60%;
-      }
     }
+    /*меню на всех экранах (которое будет и складываться на маленьких экранах и раскрываться на больших)*/
     .navbar{
       padding: 5px 5%;
     }
-    #About{
-      img{
+    /*компонент - О нас (картинки)*/
+    #About img{
         width: 226px;
-      }
     }
+    /*компоненты - Преимущества, Услуги*/
     #Advantages, #Services{
-      li {
+      /*пункты списка*/
+      li{
         font-size: 1.1rem;
         line-height: 1.8rem;
       }
     }
   }
   @media screen and (min-width: 1200px) and (max-width: 1400px){
+    /*заголовки*/
     h1{
       font-size: 3rem !important;
       line-height: 3.5rem;
@@ -888,20 +1024,23 @@ export default {
     h2{
       font-size: 1.7rem !important;
     }
+    /*параграф, пункты списка, таблицы*/
     p, li, table {
       font-size: 1.15rem !important;
       line-height: 1.7rem;
     }
+    /*меню на всех экранах (которое будет и складываться на маленьких экранах и раскрываться на больших)*/
     .navbar{
       padding: 5px 5%;
     }
-    #About{
-      img{
+    /*компонент - О нас (картинки)*/
+    #About img{
         width: 270px;
-      }
     }
+    /*компоненты - Преимущества, Услуги*/
     #Advantages, #Services{
-      li {
+      /*пункты списка*/
+      li{
         font-size: 1.15rem;
         line-height: 2.2rem;
       }
