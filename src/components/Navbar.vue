@@ -87,8 +87,8 @@
     /*все кнопки в меню*/
     .nav-link{
         color: rgb(112 112 112) !important;
-        padding-right: 1rem !important;
-        padding-left: 1rem !important;
+        padding-right: .9rem !important;
+        padding-left: .9rem !important;
         font-family: 'Tenor Sans', sans-serif;
         font-size: 1.3rem ;
         /*при наведении*/
